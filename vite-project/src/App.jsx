@@ -7,7 +7,7 @@ import About from './components/About';
 import Login from './components/Login';
 import Hero from './components/Hero';
 import Contact from './components/Contact';
-import './styles.css';
+import './styles.scss';
 
 function App() {
   return (

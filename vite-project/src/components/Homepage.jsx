@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { dataService } from '../services/DataService';
 import ChartJsChart from './ChartJsChart';
 import D3Chart from './D3Chart';
-import SimpleChart from './SimpleChart';
 
 const Homepage = () => {
   const [budgetData, setBudgetData] = useState([]);
