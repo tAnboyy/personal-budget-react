@@ -1,0 +1,460 @@
+/* Global styles from Angular personal-budget project */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 16px; /* Increased from 10px for better readability */
+    font-family: Tahoma, Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div.hero {
+    height: 350px;
+    background-color: #b4c6f0;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 40px;
+    width: 100%;
+}
+
+div.hero h1,
+div.hero h2 {
+    text-align: center;
+    margin: 0;
+}
+
+div.hero h1 {
+    color: #fff;
+    font-size: 2.6em; /* Adjusted for 16px base */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+div.hero h2 {
+    color: #4d5791;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    display: block;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-area {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #b4c6f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+.skip {
+    display: block;
+    line-height: 44px;
+    padding: 0 20px;
+    margin-top: -44px;
+    background-color: #4d5791;
+    color: white;
+    text-decoration: none;
+}
+
+.skip:focus {
+    margin-top: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Additional responsive improvements */
+@media screen and (max-width: 480px) {
+    div.hero {
+        height: 250px;
+        padding-top: 20px;
+    }
+    
+    div.hero h1 {
+        font-size: 1.5em;
+    }
+    
+    div.hero h2 {
+        font-size: 0.9em;
+    }
+    
+    .page-area {
+        padding: 0 5px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    main article {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Article and content styling */
+main article {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+main h1 {
+    color: #4d5791;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+main h2 {
+    color: #4d5791;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+main p {
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Form styling */
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4d5791;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4d5791;
+    box-shadow: 0 0 5px rgba(77, 87, 145, 0.3);
+}
+
+form button {
+    background-color: #4d5791;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3d4578;
+}
+
+@media screen and (min-width: 768px) {
+    main article {
+        margin: 15px 0;
+    }
+}
+
+/* Navigation styles */
+header {
+    background-color: #4d5791;
+}
+
+nav {
+    width: 100%;
+    background-color: #4d5791;
+    min-height: 44px;
+    padding: 0 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: white;
+    color: #4d5791;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 767px) {
+    nav {
+        padding: 0 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+    
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+    
+    div.hero h1 {
+        font-size: 2em;
+    }
+    
+    div.hero h2 {
+        font-size: 1em;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    .page-area {
+        padding: 0 10px;
+    }
+}
+
+/* Normalize CSS styles */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
